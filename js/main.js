@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-const newYearDate = '2020-12-31 23:59'
+const newYearDate = '2020/12/31 23:59'
 
   function getTimeNewYear(endtime) {
       const time = Date.parse(endtime) - new Date(),
