@@ -1,0 +1,121 @@
+body {
+  background: rgb(247,0,255);
+  background: linear-gradient(90deg, rgba(247,0,255,1) 18%, rgba(0,186,121,1) 100%);
+}
+.wrapper {
+  text-align: center;
+}
+.title-page{
+  text-align: center;
+  font-size: 50px;
+  color: #1e0f29;
+}
+.img-wrapper {
+  height: 350px;
+  width: 200px;
+  position: fixed;
+  right: 100px;
+  bottom: 0;
+}
+.images__tree{
+  height: 100%;
+}
+.modal-wrap{
+  display: none;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1050;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background-color:rgba(0,0,0,.5)
+}
+.modal__timer{
+  max-width:400px;
+  margin:40px auto;
+  background-color: rgba(230, 230, 230, .8);
+  min-height: 350px;
+  position: relative;
+}
+.modal__timer__title{
+  color: #272329;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+.timer{
+  display: flex;
+  font-size: 40px;
+  font-weight: bold;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 18%;
+}
+.timer__block {
+  box-shadow: 0px 0px 39px 0px rgba(34, 60, 80, 0.2);
+  margin-left: 10px;
+  margin-top: 5%;
+  padding: 10px;
+  background-color: rgba(222, 222, 222, .8);
+}
+.btn-timer {
+  background: rgb(0,60,148);
+  background: linear-gradient(0deg, rgba(0,60,148,1) 0%, rgba(0,0,0,1) 100%);
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 25%;
+  margin: 10px auto;
+  outline: none;
+}
+.btn-timer:hover{
+  cursor: pointer;
+}
+.show{
+  display: block ;
+}
+.hide{
+  display: none;
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 30px;
+  color: #000;
+  opacity: .5;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.images__tree--modal {
+  display: none;
+}
+
+@media all and (max-width: 540px) {
+  .title-page {
+    font-size: 30px;
+    margin-top: 35%;
+  }
+  .img-wrapper {
+    height: 150px;
+    right: -35px;
+  }
+  .btn-timer{
+    margin-top: 15%;
+    font-size: 15px;
+    width: 55%;
+  }
+  .images__tree--modal {
+    height: 90px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+  }
+}
